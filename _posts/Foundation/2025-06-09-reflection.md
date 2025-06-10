@@ -52,6 +52,51 @@ At these events, I presented three of my major projects from the year: **Student
 
 ---
 
+## Certifications (Fictional)
+
+These certifications represent skills, achievements, and values I’ve demonstrated across my work this year.
+
+- **Certified Infrastructure ML Engineer (CIME)**  
+  Awarded for building and deploying predictive models for city infrastructure using real-world datasets, including Random Forest and XGBoost.
+
+- **Certified Agile Product Owner (CAPO)**  
+  Earned through consistent Scrum leadership, backlog grooming, and sprint planning in multi-developer environments.
+
+- **Full-Stack Web Architect (FSWA)**  
+  Granted for leading end-to-end web application development — from custom layout logic in Jekyll to dynamic JavaScript filtering interfaces.
+
+- **GitHub Automation Specialist (GHAS)**  
+  Given for leveraging GitHub workflows, Issues, and project boards as an integrated development environment.
+
+- **Educational Platform Innovator (EPI)**  
+  Recognized for designing Student_2026, a scalable portfolio system adopted across a classroom for long-term use.
+
+---
+
+## Tokens & NFTs (My Developer Identity)
+
+These metaphorical tokens represent my traits, habits, and working style — forged through experience, not chance.
+
+- **`Documenter`**  
+  For meticulously logging progress, using GitHub Issues and commits as a living record of every decision.
+
+- **`Methodist`**  
+  For always engineering solutions with repeatable structure, from CI pipelines to reusable components.
+
+- **`SprintCaptain`**  
+  For leading from the front — managing standups, keeping momentum, and delivering under time pressure.
+
+- **`Synthesizer`**  
+  For connecting unrelated systems into unified architectures (e.g., combining civic data with predictive analytics).
+
+- **`Debugger Supreme`**  
+  For catching invisible bugs and solving deep architectural mismatches before anyone else notices.
+
+- **`System Builder`**  
+  For creating frameworks that empower others, not just finished apps.
+
+---
+
 ## Final Thoughts
 
 Night at the Museum was one of the most rewarding moments of the year.  
