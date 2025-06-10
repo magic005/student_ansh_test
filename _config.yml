@@ -1,9 +1,9 @@
-title: Open Coding Society 
-description: "Class of 2026"
-owner_name: Aditya Katre
-github_username: adik1025
-github_repo: "student_2026" 
-baseurl: "/student_2026"
+title: Ansh's Portfolio 
+description: "A portfolio showcasing my work and projects."
+owner_name: Ansh Kumar
+github_username: magic005
+github_repo: "student_ansh_test" 
+baseurl: "/student_ansh_test"
 future: true
 
 remote_theme: jekyll/minima
