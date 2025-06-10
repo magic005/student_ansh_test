@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Typography plugin -->
+  <!-- Your fallback stylesheet (if you still want custom styles) -->
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/minimal_custom.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  {% include head-custom.html %}
+</head>
+
+<body class="bg-white text-gray-900 font-sans leading-relaxed">
+  <div class="min-h-screen flex flex-col lg:flex-row max-w-screen-xl mx-auto px-6 lg:px-12 py-10 gap-10">
+
+    <!-- SIDEBAR -->
+    <aside class="lg:w-[260px] border-r border-gray-300 pr-6 lg:pr-10">
+      <div>
+        <h1 class="teclass="sticky top-10"xt-3xl font-bold text-blue-700 mb-2">
+          <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+        </h1>
+
+        <p class="text-gray-600 text-base mb-4">{{ site.description | default: site.github.project_tagline }}</p>
+
+        {% if site.github.is_project_page %}
+        <p class="text-sm mb-6">
+          <a href="{{ site.github.repository_url }}" class="text-blue-600 hover:underline">
+            View the Project on GitHub<br><small>{{ site.github.repository_nwo }}</small>
+          </a>
+        </p>
+        {% endif %}
+
+        <!-- NAVIGATION -->
+        <nav class="mb-10 border-b pb-4 flex flex-col gap-2 text-sm text-blue-600">
+          {% assign nav_pages = site.pages | where_exp: "page", "page.nav == true" %}
+          {% for nav_page in nav_pages %}
+            <a href="{{ nav_page.url | relative_url }}" class="hover:underline">{{ nav_page.title | escape }}</a>
+          {% endfor %}
+        </nav>
+
+        <!-- FOOTER -->
+        <footer class="text-sm text-gray-500 border-t pt-4">
+          {% if site.github.is_project_page %}
+          <p>This project is maintained by 
+            <a href="{{ site.github.owner_url }}" class="text-blue-600 hover:underline">
+              {{ site.github.owner_name }}
+            </a>
+          </p>
+          {% endif %}
+          <p><small>Hosted on GitHub Pages — Theme by 
+            <a href="https://github.com/pages-themes/minimal" class="underline">pages-themes</a></small>
+          </p>
+        </footer>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 px-4 md:px-8 lg:px-12">
+      {% if page.author %}
+        <p class="post-author">Authored by: <em>{{ page.author }}</em></p>
+      {% endif %}
+      <div class="markdown-body">
+        {{ content }}
+      </div>
+    </main>
+
+  </div>
+
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+</html>

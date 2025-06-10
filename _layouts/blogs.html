@@ -1,0 +1,43 @@
+---
+layout: page 
+---
+
+{{ content | markdownify }}
+
+{% assign rawposts = site.posts %}
+{% assign posts = '' | split:'' %}
+{% for post in rawposts %}
+  {% if post.hide != true %}
+    {% assign posts = posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% assign grouped_posts = posts | group_by: "sticky_rank" | sort: "name", "last" %}
+{% assign sticky_posts = '' | split:'' %}
+{% assign non_sticky_posts = '' | split:'' %}
+{% for gp in grouped_posts %}
+  {%- if gp.name == "" -%}
+    {% assign non_sticky_posts = gp.items | sort: "date" | reverse %}
+  {%- else %}
+    {% assign sticky_posts = sticky_posts | concat: gp.items %}
+  {%- endif %}
+{% endfor %}
+
+{% assign sticky_posts = sticky_posts | sort: "sticky_rank", "last" %}
+{% assign posts = sticky_posts | concat: non_sticky_posts %}
+
+{%- if posts.size > 0 -%}
+  {%- if page.list_title -%}
+    <h2 class="post-list-heading text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+      {{ page.list_title }}
+    </h2>
+  {%- endif -%}
+  <ul class="post-list grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts -%}
+    <li class="border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition-shadow">
+      {%- include posts/post_list_image_card.html -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
