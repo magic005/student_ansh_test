@@ -24,7 +24,7 @@ minima:
     - navigation/authentication/logout.md
 
 
-  # for partial themes, uncomment the following line and add the theme name, otherwise leave blank/commented and update sass
+  # for partia themes, uncomment the following line and add the theme name, otherwise leave blank/commented and update sass
   # skin: 
   
   social_links:
