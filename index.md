@@ -37,6 +37,6 @@ hide: true
 <!-- Contact Section -->
 <h2 style="margin-top: 40px; font-size: 1.8em; color: #2A7DB1;">Get in Touch</h2>
 <p>Feel free to reach out if you'd like to collaborate or learn more about my work.</p>
-<p style="color: #2A7DB1;">Email: <a href="mailto:your-email@example.com" style="color: #2A7DB1; text-decoration: underline;">your-email@example.com</a></p>
+<p style="color: #2A7DB1;">Email: <a href="mailto:anshie09@gmail.com" style="color: #2A7DB1; text-decoration: underline;">anshie09@gmail.com</a></p>
 
 </div>
