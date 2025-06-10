@@ -11,6 +11,8 @@ hide: true
 
 <p><a href="https://www.linkedin.com/in/ansh-kumar-433256291/" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #2A7DB1; color: white; text-decoration: none; font-weight: bold; border-radius: 6px;">View Linkedin</a></p>
 
+<p><a href="https://magic005.github.io/student_ansh_test/overview/" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #2A7DB1; color: white; text-decoration: none; font-weight: bold; border-radius: 6px;">Deeper Look</a></p>
+
 <!-- Featured Projects -->
 <h2 style="margin-top: 40px; font-size: 1.8em; color: #2A7DB1;">Featured Projects</h2>
 
