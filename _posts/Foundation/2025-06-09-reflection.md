@@ -52,7 +52,7 @@ At these events, I presented three of my major projects from the year: **Student
 
 ---
 
-## Certifications (Fictional)
+## Certifications
 
 These certifications represent skills, achievements, and values I’ve demonstrated across my work this year.
 
